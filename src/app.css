@@ -36,6 +36,33 @@ small{
   font-family: 'Satisfy', cursive;
   font-size: 1.5em;
 }
+.navbar-light .navbar-nav .nav-link{
+  color: var(--colorYellow);
+}
+#navMenu{
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /*display: none;*/
+}
+.icon-close{
+  display: none;
+}
+.nav-link{
+  padding: 20px 0;
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.6em;
+  width: 100%;
+  background-color: var(--colorBlue);
+  color: var(--colorYellow);
+}
+#iconMenu{
+  position: absolute;
+  top: 25px;
+  right: 145px;
+}
 
 .WebHero{
     height: 55vh;
