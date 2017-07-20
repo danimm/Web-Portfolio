@@ -1,0 +1,126 @@
+:root{
+    /*--mainColor1: color(peru blackness(60%));*/
+    --ColorBlack: #50514F;
+    --colorRed: #F25F5C;
+    --colorYellow: #FFE066;
+    --colorBlue: #247BA0;
+    --colorGreen: #70C1B3;
+    --mainColor: #2980B9;
+    --colorGray: #DFDFDF;
+    --colorGreen2:#1DB998;
+    --btn-gradient: #fd324e;
+    --btn-gradient-start: color(red blackness(50%));
+    --btn-gradient-end: color(blue lightness(+20%) hue(10%))
+}
+*{
+  /*border: 1px solid red;*/
+}
+
+h1,h3,h2,h4,span{
+  font-family: 'Oswald', sans-serif;
+}
+h1,h3,h2{
+  font-size: 3em;
+}
+/*h3{
+  font-family: 'Lato', sans-serif;
+}*/
+h4{
+  font-family: 'Noto Serif', serif;
+}
+h1{
+  font-weight: 550;
+  font-size: 4.5em;
+}
+small{
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5em;
+}
+
+.WebHero{
+    height: 65vh;
+    background: url(../images/fondo-header.min.jpg) 50% 50%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-header{
+      height: 100%;
+      width: 100%;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding-top: 20vh;
+      text-align: center;
+      text-transform: uppercase;
+    }
+      &-foto{
+        height: 230px;
+        width: 230px;
+        background: url(../images/foto.min.jpg);
+        background-position: 31%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        align-self: center;
+        border: solid 8px var(--colorBlue);
+        border-radius: 50%;
+        position: absolute;
+        bottom: -22%;
+      }
+}
+
+.WebDetails{
+  background-color: var(--colorGray);
+  &-row{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.WebDetails figure:after{
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: -10%;
+  border: 2px solid var(--colorBlue);
+  border-radius: 50%;
+  padding: 5px;
+}
+.WebDetails-iconContainer{
+  position: relative;
+}
+.WebDetails img{
+  height: 100px;
+}
+.WebSkills{
+
+  background: url(../images/fondo-header.min.jpg) 50% 50%;
+  color: white;
+    &-fade{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    }
+    &-row{
+      padding-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+    &WebSkills-progress-bar{
+    }
+}
+
+.WebSkills-row span, .WebSkills.progress, .WebSkills .col-sm-11{
+  padding: 0 0 15px 15px;
+}
+.col-sm-1 span{
+  padding-left: 0;
+}
