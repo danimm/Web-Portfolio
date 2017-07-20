@@ -81,19 +81,35 @@ small{
     justify-content: center;
     text-align: center;
   }
+  &-text{
+    margin-bottom: 80px;
+  }
+  &-container{
+    &-subtitle{
+      display: block;
+      margin-bottom: 30px;
+    }
+    &-title{
+      margin-bottom: 30px;
+    }
+  }
 }
 .WebDetails figure:after{
   content: "";
   height: 150px;
   width: 150px;
   position: absolute;
-  left: -10%;
+  bottom: 252px;
+  right: 115px;
   border: 2px solid var(--colorBlue);
   border-radius: 50%;
   padding: 5px;
 }
 .WebDetails-iconContainer{
   position: relative;
+  &-h3{
+    padding-top:  40px;
+  }
 }
 .WebDetails img{
   height: 100px;
@@ -123,4 +139,57 @@ small{
 }
 .col-sm-1 span{
   padding-left: 0;
+}
+
+@media (max-width: 1199px){
+  .WebDetails figure:after{
+    bottom: 329px;
+    right: 83px;
+    border: 2px solid var(--colorGreen);
+  }
+}
+@media (max-width: 990px){
+  .WebDetails figure:after{
+    bottom: 436px;
+    right: 45px;
+    border: 2px solid var(--ColorBlack);
+  }
+}
+@media (max-width: 768px){
+  .WebDetails figure:after{
+    bottom: 338px;
+    right: 60px;
+    border: 2px solid var(--colorRed);
+  }
+}
+@media (max-width: 768px){
+  .WebDetails figure:after{
+    bottom: 285px;
+    right: 106px;
+    border: 2px solid var(--colorBlue);
+    display: none;
+  }
+  .WebDetails-container h4{
+    margin-bottom: 40px;
+  }
+  .WebHero{
+    height: 640px;
+  }
+  .col-sm-1 span{
+    display: none;
+  }
+  .WebDetails-row{
+    padding-bottom: 40px;
+  }
+  .WebSkills-row{
+    padding-top: 20px;
+  }
+  .WebDetails figure.estrella:after{
+    bottom: 250px;
+    right: 106px;
+    display: none;
+  }
+  .progress{
+    margin: 10px 0;
+  }
 }
